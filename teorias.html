@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcane wiki</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/George-Ui-Ancient-Legend-Internet.256.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="teorias.html" class="active">Teorias</a></li>
+                <li><a href="historias.html">Histórias</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="teorias">
+            <h1>Teorias de Arcane</h1>
+            <p>Leia e contribua com teorias sobre o universo de Arcane!</p>
+
+            <div id="teoria-form">
+                <h2>Adicionar uma nova teoria</h2>
+                <form id="nova-teoria-form">
+                    <div class="form-group">
+                        <label for="titulo-teoria">Título da Teoria:</label>
+                        <input type="text" id="titulo-teoria" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="conteudo-teoria">Conteúdo:</label>
+                        <textarea id="conteudo-teoria" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Adicionar Teoria</button>
+                </form>
+            </div>
+
+            <div id="teorias-lista">
+                <h2>Teorias Recentes</h2>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/javinha.js"></script>
+</body>
+</html>

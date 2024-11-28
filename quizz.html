@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcane wiki</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/George-Ui-Ancient-Legend-Internet.256.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                 <li><a href="index.html">Início</a></li>
+                 <li><a href="teorias.html">Teorias</a></li>
+                 <li><a href="historias.html">Histórias</a></li>
+               <li><a href="index.html" class="active">Quizz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="titulo-quizz">
+            <h1>Descubra qual personagem de Arcane você é!</h1> 
+        </section>
+        <br>
+        <section class="quiz-container">
+            <form id="quiz-form">
+                <div class="question">
+                    <p>1. Como você encara desafios?</p>
+                    <label><input type="radio" name="q1" value="ekko"> Com criatividade e resiliência.</label>
+                    <br>
+                    <label><input type="radio" name="q1" value="jayce"> Com lógica e inovação.</label>
+                    <br>
+                    <label><input type="radio" name="q1" value="vi"> Com determinação e força bruta.</label>
+                    <br>
+                    <label><input type="radio" name="q1" value="caitlyn"> Com precisão e foco.</label>
+                </div>
+                <br>
+                <div class="question">
+                    <p>2. O que é mais importante para você?</p>
+                    <label><input type="radio" name="q2" value="wender"> Lealdade aos amigos.</label>
+                    <br>
+                    <label><input type="radio" name="q2" value="singed"> Progresso científico a qualquer custo.</label>
+                    <br>
+                    <label><input type="radio" name="q2" value="heimendinger"> Compartilhar conhecimento.</label>
+                    <br>
+                    <label><input type="radio" name="q2" value="ekko"> Lutar pela comunidade.</label>
+                </div>
+                <br>
+                <div class="question">
+                    <p>3. Como você lida com falhas?</p>
+                    <label><input type="radio" name="q3" value="jayce"> Aprende e se adapta para o próximo desafio.</label>
+                    <br>
+                    <label><input type="radio" name="q3" value="vi"> Insiste até superar.</label>
+                    <br>
+                    <label><input type="radio" name="q3" value="singed"> Usa como aprendizado para seus experimentos.</label>
+                    <br>
+                    <label><input type="radio" name="q3" value="caitlyn"> Reavalia calmamente antes de prosseguir.</label>
+                </div>
+                <button type="button" id="submit-button" class="btn">Descobrir!</button>
+            </form>
+            <section id="result" class="hidden">
+                <h2>Seu Resultado:</h2>
+                <div id="character-result-container">
+                    <img id="character-image" src="" alt="Personagem" style="width: 300px; border-radius: 8px;">
+                    <p id="character-result"></p>
+                </div>
+            </section>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Quiz de Arcane. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/javinha.js"></script>
+</body>
+</html>
